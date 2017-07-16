@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Custom Cart</title>
-        <link rel="icon" href="cart.jpg">
-    </head>
-    <body>
-        <div class="containerfield">
-            <header>
-                <img src="list.svg" alt="list" height="20"/>
-                <h3>My Shopping List</h3>
-                <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald">
-                <link rel="stylesheet" href="site.css">
-                <input id="reset-button" type="button" onclick="reset()" value="Reset" />                       
-            </header>
-      <!-- add item form -->      
-            <div id="middle">
-                <fieldset>
-                    <section id="list-prep" class="transparent-border">
-                        <strong>Custom Item:</strong><br/>
-                        <input type="text" id="item" placeholder="Type item here...">
-                        <input type="button" onclick="changeText2()" value="Add" /><br/>
-                        <br/><br/>
-                        <strong>Frequently ordered items:</strong>
-                        <section class="usualitems">
-                            <select name="selectfrom" id="addItem" size="3">
+
+<head>
+    <title>Custom Cart</title>
+    <link rel="icon" href="cart.jpg">
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald">
+    <link rel="stylesheet" href="site.css">
+</head>
+
+<body>
+    <div class="containerfield">
+        <header>
+            <img src="list.svg" alt="list" height="20" />
+            <h1>My Shopping List</h1>
+            <input id="reset-button" type="button" onclick="reset()" value="Reset" />
+        </header>
+        <!-- add item form -->
+        <div id="middle">
+            <fieldset>
+                <section id="list-prep" class="transparent-border">
+                    <h2>Custom Item:</h2><br/>
+                    <input type="text" id="item" placeholder="Type item here...">
+                    <input type="button" onclick="changeText2()" value="Add" /><br/>
+                    <br/><br/>
+                    <h2>Frequently ordered items:</h2>
+                    <section class="usualitems">
+                        <select name="selectfrom" id="addItem" size="3" multiple>
                                 <option>Milk</option>
                                 <option>Bread</option>
                                 <option>Eggs</option>
-                            </select>                            
-                        </section>    
-                        <input id="push2list" type="button" onclick="add2list()"    value="Add" />
-                            <br/>
+                            </select>
                     </section>
-<!-- Lis    t it    ems to be checked -->
-                    <section id="grocery-list">
-                        <p><strong>Shopping List:</strong></p>
+                    <input id="push2list" type="button" value="Add" />
+                    <br />
+                </section>
+                <!-- Lis    t it    ems to be checked -->
+                <section id="grocery-list">
+                    <p>
+                        <h2>Shopping List:</h2>
+                    </p>
 
-                        <!-- below is test code -->
-                        <section class="section">
-                            <div id="cblist" class="container">
-                            </div>
-                        </section>
+                    <!-- below is test code -->
+                    <section class="section">
+                        <div id="cblist" class="container">
+                        </div>
                     </section>
-                </fieldset>
-            </div>
-            <footer>
-                &copy; 2017 Developer: Daniel Pogue
-            </footer>
-            <script type="text/javascript" src="jquery-3.2.1.js"></script>
-            <script type="text/javascript" src="test.js"></script>
+                </section>
+            </fieldset>
         </div>
-    </body>
+        <footer>
+            &copy; 2017 Developer: Daniel Pogue
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="test.js"></script>
+
+</body>
+
 </html>

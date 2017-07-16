@@ -1,144 +1,153 @@
 /* site.css */
 
-html, body {
-    padding: 0;
-    margin: 0;
+html,
+body {
+	padding: 0;
+	margin: 0;
 }
 
-h3, img {
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 7px;
+h1,
+img {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 7px;
 }
 
-h3 {
-    left: 20px;
+h1 {
+	font-size: 30px;
+	left: 45px;
+}
+
+h2 {
+	font-size: 20px;
 }
 
 img {
-    top: 15px;
+	top: 15px;
 }
 
 body {
-    font-family: "Oswald", sans-serif;
+	font-family: "Oswald", sans-serif;
 }
 
-header, h3 > link {
-    background-color: orange;
-    font-family: "Oswald", sans-serif;
-    font-size: 30px;
-    color: white;
-    width: 1100px;
-    height: 60px; 
-    position: fixed;
+header,
+h1 > link {
+	background-color: orange;
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+	color: white;
+	width: 1100px;
+	height: 60px;
+	position: fixed;
 }
 
 #reset-button {
-    position: fixed;
-    top: 10px;
-    left: 1100px;
-    height: 35px;
-    width: 100px;
-    color: white;
-    background-color: rgb(158, 50, 0);
-    font-size: 18px;
+	position: fixed;
+	top: 10px;
+	left: 1100px;
+	height: 35px;
+	width: 100px;
+	color: white;
+	background-color: rgb(158, 50, 0);
+	font-size: 18px;
 }
 
 #middle {
-    padding-top: 60px;
+	padding-top: 60px;
 }
 
 section {
-    font-weight: 400px;
+	font-weight: 400px;
 }
 
 footer {
-    background-color: lightgray;
-    padding: 15px;
-    font-family: "Oswald", sans-serif;
-    font-weight: 200px;
-    text-align: center;
+	background-color: lightgray;
+	padding: 15px;
+	font-family: "Oswald", sans-serif;
+	font-weight: 200px;
+	text-align: center;
 }
 
 form {
-    padding: 25px;
+	padding: 25px;
 }
 
 .usualitems {
-    border: transparent 1px;
-    width: 350px;
-    display: inline-block;      
+	border: transparent 1px;
+	width: 350px;
+	display: inline-block;
 }
 
 ul {
-    padding: 0px;
-    margin: 5px;
+	padding: 0px;
+	margin: 5px;
 }
 
 #addItem {
-    overflow-y: auto;
-    width: 350px;
+	overflow-y: auto;
+	width: 350px;
 }
 
-#addItem option, #cblist {
-    padding-left: 15px;
-    list-style-type: none;
-    list-style-position: inherit;
-    color: darkslategray;
-    font-family: 'Oswald', sans-serif;
-    font-size: 25px;
-    font-weight: bold; 
+#addItem option,
+#cblist {
+	padding-left: 15px;
+	list-style-type: none;
+	list-style-position: inherit;
+	color: darkslategray;
+	font-family: 'Oswald', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
 }
 
 ul {
-     list-style-type: none;
+	list-style-type: none;
 }
 
 .transparent-border {
-    width: 550px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    border-right: solid darkgray 2px;
+	width: 550px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-right: solid darkgray 2px;
 }
 
 #list-prep {
-    padding-left: 10px;
-    font-size: 24px;
-    display: inline-block;
+	padding-left: 10px;
+	font-size: 24px;
+	display: inline-block;
 }
 
 #list-prep input[type=text] {
-    width: 250px;
-    height: 50px;
-    font-size: 24px;
+	width: 250px;
+	height: 50px;
+	font-size: 24px;
 }
 
 #list-prep input[type=button] {
-    height: 56px;
-    font-size: 24px;
+	height: 56px;
+	font-size: 24px;
 }
 
 #push2list {
-    display: inline-block;
-    vertical-align: top;
+	display: inline-block;
+	vertical-align: top;
 }
 
 .containerfield {
-    width: 1100px;
-    margin: 0 auto;
-    background-color: white;
+	width: 1100px;
+	margin: 0 auto;
+	background-color: white;
 }
 
 #grocery-list {
-    padding-left: 10px;
-    width: 400px;
-    display: inline-block;
-    vertical-align: top;
-    font-size: 24px;
+	padding-left: 10px;
+	width: 400px;
+	display: inline-block;
+	vertical-align: top;
+	font-size: 24px;
 }
 
-/* styling for checkboxes not working  :/ 
+/* styling for checkboxes not working  :/
 
 .section input[type="checkbox"]{
   display: none;
