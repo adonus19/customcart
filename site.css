@@ -1,0 +1,183 @@
+/* site.css */
+
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+h3, img {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 7px;
+}
+
+h3 {
+    left: 20px;
+}
+
+img {
+    top: 15px;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+}
+
+header, h3 > link {
+    background-color: orange;
+    font-family: "Oswald", sans-serif;
+    font-size: 30px;
+    color: white;
+    width: 1100px;
+    height: 60px; 
+    position: fixed;
+}
+
+#reset-button {
+    position: fixed;
+    top: 10px;
+    left: 1100px;
+    height: 35px;
+    width: 100px;
+    color: white;
+    background-color: rgb(158, 50, 0);
+    font-size: 18px;
+}
+
+#middle {
+    padding-top: 60px;
+}
+
+section {
+    font-weight: 400px;
+}
+
+footer {
+    background-color: lightgray;
+    padding: 15px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 200px;
+    text-align: center;
+}
+
+form {
+    padding: 25px;
+}
+
+.usualitems {
+    border: transparent 1px;
+    width: 350px;
+    display: inline-block;      
+}
+
+ul {
+    padding: 0px;
+    margin: 5px;
+}
+
+#addItem {
+    overflow-y: auto;
+    width: 350px;
+}
+
+#addItem option, #cblist {
+    padding-left: 15px;
+    list-style-type: none;
+    list-style-position: inherit;
+    color: darkslategray;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    font-weight: bold; 
+}
+
+ul {
+     list-style-type: none;
+}
+
+.transparent-border {
+    width: 550px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-right: solid darkgray 2px;
+}
+
+#list-prep {
+    padding-left: 10px;
+    font-size: 24px;
+    display: inline-block;
+}
+
+#list-prep input[type=text] {
+    width: 250px;
+    height: 50px;
+    font-size: 24px;
+}
+
+#list-prep input[type=button] {
+    height: 56px;
+    font-size: 24px;
+}
+
+#push2list {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.containerfield {
+    width: 1100px;
+    margin: 0 auto;
+    background-color: white;
+}
+
+#grocery-list {
+    padding-left: 10px;
+    width: 400px;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 24px;
+}
+
+/* styling for checkboxes not working  :/ 
+
+.section input[type="checkbox"]{
+  display: none;
+}
+
+.container label {
+  position: relative;
+}
+
+span::before,
+span::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+span.checkbox::before {
+  width: 27px;
+  height: 27px;
+  background-color: #fff;
+  left: -35px;
+  box-sizing: border-box;
+  border: 3px solid transparent;
+  transition: border-color .2s;
+}
+span.checkbox:hover::before {
+  border: 3px solid #F0FF76;
+}
+span.checkbox::after {
+  content: '\f00c';
+  left: -31px;
+  top: 2px;
+  color: transparent;
+  transition: color .2s;
+}
+input[type="checkbox"]:checked + label span.checkbox::after {
+  color: #62AFFF;
+}
+
+*/

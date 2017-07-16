@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Custom Cart</title>
+        <link rel="icon" href="cart.jpg" />
+    </head>
+    <body>
+        <div class="containerfield">
+            <header>
+                <img src="list.svg" alt="list" height="20"/>
+                <h3>My Grocery List</h3>
+                <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald">
+                <link rel="stylesheet" href="site.css">
+                <input id="reset-button" type="button" onclick="reset()" value="Reset" />                       
+            </header>
+<!-- ad      item form -->
+            <div id="middle">
+                <section id="list-prep" class="transparent-border">
+                    <strong>Custom Item:</strong><br/>
+                    <input type="text" id="item" placeholder="Type item here">
+                    <input type="button" onclick="changeText2()" value="Add" /><br/>
+                    <br/><br/>
+                    <strong>Frequently ordered items:</strong>
+                    <section class="usualitems">
+                        <ul id="addItem">
+                            <li>Milk</li>
+                            <li>Bread</li>
+                            <li>Eggs</li>
+                        </ul>                            
+                    </section>    
+                    <input id="push2list" type="button" onclick="add2list()" value="Add">
+                        <br/>
+                </section>
+<!-- List it    ems to be checked -->
+                <section id="grocery-list">
+                    <p><strong>Shopping List:</strong></p>
+                    <ul id="checklist">
+                    This is where the check list will be
+                    </ul>
+                </section>
+            </div>    
+            <footer>
+                &copy; 2017 Developer: Daniel Pogue
+            </footer>
+            <script type="text/javascript" src="jquery-3.2.1.js"></script>
+            <script type="text/javascript" src="javascript.js"></script>
+        </div>
+    </body>
+</html>
