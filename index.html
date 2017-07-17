@@ -4,49 +4,52 @@
 <head>
     <title>Custom Cart</title>
     <link rel="icon" href="cart.jpg">
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Oswald">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="site.css">
 </head>
 
 <body>
     <div class="containerfield">
-        <header>
-            <img src="list.svg" alt="list" height="20" />
-            <h1>My Shopping List</h1>
-            <input id="reset-button" type="button" onclick="reset()" value="Reset" />
+        <header class="top-bar">
+            <div class="page-centered">
+                <img src="list.svg" alt="list" />
+                <h1>My Shopping List</h1>
+                <input id="reset-button" type="button" onclick="reset()" value="Reset" />
+            </div>
         </header>
         <!-- add item form -->
-        <div id="middle">
-            <fieldset>
-                <section id="list-prep" class="transparent-border">
-                    <h2>Custom Item:</h2><br/>
-                    <input type="text" id="item" placeholder="Type item here...">
-                    <input type="button" onclick="changeText2()" value="Add" /><br/>
-                    <br/><br/>
-                    <h2>Frequently ordered items:</h2>
-                    <section class="usualitems">
-                        <select name="selectfrom" id="addItem" size="3" multiple>
+        <div id="middle" class="page-centered">
+            <section id="list-prep" class="transparent-border">
+                <h2>Custom Item:</h2>
+                <input type="text" id="item" placeholder="Type item here...">
+                <input type="button" onclick="changeText2()" value="Add" /><br/>
+                <br/><br/>
+                <h2>Frequently ordered items:</h2>
+                <section class="usualitems">
+                    <select name="selectfrom" id="addItem" size="3" multiple>
                                 <option>Milk</option>
                                 <option>Bread</option>
                                 <option>Eggs</option>
                             </select>
-                    </section>
-                    <input id="push2list" type="button" value="Add" />
-                    <br />
                 </section>
-                <!-- Lis    t it    ems to be checked -->
-                <section id="grocery-list">
-                    <p>
-                        <h2>Shopping List:</h2>
-                    </p>
+                <input id="push2list" type="button" value="Add" />
+                <br />
+            </section>
+            <!-- Lis    t it    ems to be checked -->
+            <section id="grocery-list">
+                <p>
+                    <h2>Shopping List:</h2>
+                </p>
 
-                    <!-- below is test code -->
-                    <section class="section">
-                        <div id="cblist" class="container">
-                        </div>
-                    </section>
+                <!-- below is test code -->
+                <section class="section">
+                    <div id="cblist" class="container">
+                    </div>
                 </section>
-            </fieldset>
+            </section>
         </div>
         <footer>
             &copy; 2017 Developer: Daniel Pogue
